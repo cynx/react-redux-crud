@@ -39,6 +39,7 @@ class PostShow extends Component {
         return (
             <div>
                 <Link className="btn btn-primary pull-xs-right" to="/" type="button">Back to Index</Link>
+                <Link className="btn btn-success pull-xs-right" style={btnStyle} to={`posts/edit/${post.id}`} type="button">Edit Post</Link>
                 <button className="btn btn-danger pull-xs-right" style={btnStyle} onClick={()=>this.onDeleteClick(post.id)}>Delete Post</button>
                 <h3>{post.title}</h3>
                 <h6>Categories: {post.categories}</h6>
