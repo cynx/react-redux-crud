@@ -15,6 +15,8 @@ class PostNew extends Component {
     }
 
     onSubmit(props){
+        if (this.props.route.path && this.props.route.path.indexOf('posts/edit/')>-1 && this.props.params.id)
+            props.id = this.props.params.id;
         this.props.createPost(props)
             .then(()=>{
                 //blog post has been created, navigate the user to the index
