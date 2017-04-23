@@ -1,5 +1,5 @@
 {
-  "name": "redux-simple-starter",
+  "name": "react-redux-crud",
   "version": "1.0.0",
   "description": "React Redux CRUD",
   "main": "index.js",
